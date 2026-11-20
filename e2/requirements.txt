@@ -1,0 +1,8 @@
+# Agent/AppWorld environment; keep separate from Clef.
+torch==2.8.0
+transformers==5.2.0
+accelerate==1.12.0
+safetensors==0.5.3
+appworld==0.1.3.post1
+requests>=2.32,<3
+uvicorn>=0.30,<1

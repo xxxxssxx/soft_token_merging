@@ -1,0 +1,37 @@
+{
+  "variant": "clef",
+  "model": {
+    "path": "/home/cache/astc/models/Qwen3.5-9B",
+    "device": "cuda:1",
+    "dtype": "bfloat16"
+  },
+  "clef": {
+    "prompt_version": "task-relevance-v3-delete",
+    "url": "http://127.0.0.1:37753",
+    "fields_per_request": 32,
+    "relevance_threshold": 0.5,
+    "timeout": 300
+  },
+  "compression": {
+    "layer": 10,
+    "slots": 16,
+    "merge_error": 0.5,
+    "members_per_slot": 2,
+    "min_layer_savings": 256,
+    "min_tool_fraction": 0.05
+  },
+  "generation": {
+    "max_action_tokens": 768,
+    "max_context": 32768,
+    "greedy": true,
+    "temperature": 0.6,
+    "top_k": 20
+  },
+  "max_steps": 50,
+  "model_seed": 20260914,
+  "appworld_root": "/home/cache/astc/appworld",
+  "environment_url": "http://127.0.0.1:37752",
+  "tasks": null,
+  "task_limit": null,
+  "output_directory": null
+}
